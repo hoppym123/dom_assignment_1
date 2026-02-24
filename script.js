@@ -1,5 +1,7 @@
 //greeting base on time of the day
-    const hour = new Date.getHours();
+    
+function getGreeting() {
+    const hour = new Date().getHours();
     let message;
 
     if(hour < 12){
@@ -14,8 +16,10 @@
     }else{
         message="Good Night! 🌙";
     };
+    return message;
+};
 
-    document.getElementById("greeting").innerText = message;
+    document.getElementById("greeting").innerText = getGreeting();
 
 //generate profile
 

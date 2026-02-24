@@ -1,20 +1,95 @@
 .body{
-    font-family: Arial, sans-serif;
     background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 20px;
 }
-.card{
-    
+h1 {
+    color: grey;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
 }
-h1{
-    display: flex;
+.container {
+    display: inline-block;
     justify-content: center;
     align-items: center;
-    font-size: 2em;
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+.card{
+     
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
     margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    
+}
+.field {
+    margin-bottom: 15px;
+    width: 600px;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 5px 10px;
+    font-size: 16px;
+    box-shadow: 0 0 5px #160a0abb;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+.btn{
+    border-radius: 10px;
+    box-shadow: 0 5px 5px #160a0abb;
+}
+.btn-generate {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.btn-reset {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+#nameInput {
+    width: 70px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+}
+#ageInput {
+    width: 70px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+
+}
+#colorInput {
+    width: 70px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
 }
