@@ -1,4 +1,4 @@
-.body{
+body{
     background-color: #f0f0f0;
     font-family: Arial, sans-serif;
     margin: 0;
@@ -11,7 +11,7 @@ h1 {
     align-items: center;
 }
 .container {
-    display: inline-block;
+    display: block;
     justify-content: center;
     align-items: center;
     max-width: 100%;
@@ -33,23 +33,24 @@ h1 {
     padding: 20px;
     margin-bottom: 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    display: inline-block;
+    display:  block ;
     justify-content: center;
     align-items: center;
     
 }
 .field {
-    margin: 30px 0px 30px 0px;
-    width: 600px;
+    margin: 10px 30px 20px 0px;
+    width: 200px;
     height: 30px;
     border: 1px solid #ccc;
     border-radius: 20px;
     padding: 15px 25px;
     font-size: 16px;
     box-shadow: 0 0 5px #160a0abb;
-    display: block;
+    display: block ;
     justify-content: center;
     align-items: center;
+    
 }
 .btn{
     margin-top: 40px;
@@ -68,18 +69,20 @@ h1 {
     background-color: #f44336;
     color: white;
     border: none;
-    padding: 10px 20px;
+    padding: 10px 40px;
     font-size: 16px;
     cursor: pointer;
 }
 #nameInput {
     width: 70px;
     padding: 10px 15px;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
     border: 1px solid #ccc;
     border-radius: 15px;
+
 }
 #ageInput {
+
     width: 70px;
     padding: 10px;
     margin-bottom: 10px;
@@ -90,7 +93,75 @@ h1 {
 #colorInput {
     width: 100px;
     padding: 10px 15px;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 20px;
 }
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 10px;
+    }
+    .card {
+        padding: 15px;
+    }
+    .btn-generate,
+    .btn-reset {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+    .container {
+        width: 95%;
+        padding: 15px;
+        top: 50%;
+    }
+    .field {
+    
+        width: 70px;
+        height: 50px;
+        padding: 10px 15px; 
+        font-size: 14px;
+        box-sizing: border-box;
+        margin: 0 0 20px 0;
+    }
+    #nameInput,
+    #ageInput,
+    #colorInput {
+        
+        width: 100px;
+        margin-bottom: 10px;
+    }
+    .btn-generate,
+    .btn-reset {
+        padding: 10px 15px;
+        font-size: 14px;
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        max-width: 800px;
+    }
+    .field {
+        width: 650px;
+    }
+    }
+    .field {
+        width: 100%;
+        padding: 10px;
+    }
+    #namelabel
+    #agelabel,
+    #colorlabel {
+        display: block;
+        margin-bottom: 5px;
+        width: 300px;
+    }
